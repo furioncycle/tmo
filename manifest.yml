@@ -1,0 +1,12 @@
+---
+applications:
+  - name: tmo
+    instances: 1
+    memory: 1G
+    services:
+      - tmo-psql
+    env:
+      DJANGO_SETTINGS_MODULE: tmo.django.prod
+    command: null
+    # buildpacks:
+      # - python_buildpack
