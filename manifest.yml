@@ -10,3 +10,4 @@ applications:
     command: null
     # buildpacks:
       # - python_buildpack
+    health-check: proccess
