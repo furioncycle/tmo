@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   tmo:
-    image: tmo:0.0.0
+    image: tmo
     container_name: tmo
     build:
       context: .
