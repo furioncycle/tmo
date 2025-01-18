@@ -7,7 +7,6 @@ DEBUG = env.bool("DJANGO_DEBUG", default=False)
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
 
 creds = json.loads(os.getenv('VCAP_SERVICES'))['user-provided'][0]['credentials']
-
 SECRET_KEY = creds['SECRET_KEY']
 
 # Database

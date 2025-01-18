@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 from .base import * 
 from tmo.env import env
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = env.str("SECRET_KEY")# SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = env.bool("DJANGO_DEBUG", default=True)
 
 ALLOWED_HOSTS = ["*"]
